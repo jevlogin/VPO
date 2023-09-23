@@ -24,7 +24,7 @@ if (tg) {
             LastName: lastName,
             PhoneNumber: phone,
             Email: email,
-            UserName: email.split('@')[0],
+            UserName: email.split('@'),
         };
 
         let jsonArray = [messageDataInfoType, formRequestForConsultation];
