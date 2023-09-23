@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма анкеты VPO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-3" id="messageContainer">Запись на офлайн консультацию</h1>
+        <form id="introduction-vpo-form">
+            <input type="hidden" id="formType" name="formType" value="VPOForm">
+            <div class="form-group">
+                <label for="firstName">Введите ваше имя:</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Введите вашу фамилию:</label>
+                <input type="text" class="form-control" id="lastName" name="lastName">
+            </div>
+            <div class="form-group">
+                <label for="phone">Введите ваш телефон:</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <button type="submit" id="submit" class="btn btn-primary">Отправить</button>
+        </form>
+    </div>
+    <script src="js/vpoFormCallBack.js"></script>
+</body>
+</html>
